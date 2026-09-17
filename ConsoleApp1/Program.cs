@@ -45,4 +45,3 @@ Console.ReadKey();
 // int damage = Random.Shared.Next(5, 11);
 // Console.WriteLine(damage);
 
-Console.ReadLine();
