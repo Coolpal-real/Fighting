@@ -31,7 +31,7 @@ if (Knuckleshp == 0 && Sonichp2 == 0)
 }
 else if (Knuckleshp == 0)
 {
-    Console.WriteLine($"{sonicName} HAS BESTED THE ECHIDNA GUARDIAN ONCE AGAIN!");
+    Console.WriteLine($"{sonicName} HAS BESTED THE ECHIDNA WARRIOR ONCE AGAIN!");
 }
 else
 {
