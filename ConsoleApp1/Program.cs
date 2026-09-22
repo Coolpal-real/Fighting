@@ -1,23 +1,23 @@
 ﻿int Knuckleshp = 100;
-int MechaKnuckleshp2 = 100;
+int Sonichp2 = 100;
 
 string knucklesName = "KNUCKLES";
-string mechaknucklesName = "MECHAKNUCKLES";
+string sonicName = "SONIC";
 
-while (Knuckleshp > 0 && MechaKnuckleshp2 > 0)
+while (Knuckleshp > 0 && Sonichp2 > 0)
 {
     Console.WriteLine("\n DEATH MATCH");
-    Console.WriteLine($"{knucklesName}: {Knuckleshp} {mechaknucklesName}: {MechaKnuckleshp2}\n");
+    Console.WriteLine($"{knucklesName}: {Knuckleshp} {sonicName}: {Sonichp2}\n");
     
     int knucklesDamage = Random.Shared.Next(20);
-    MechaKnuckleshp2 -= knucklesDamage;
-    MechaKnuckleshp2 = Math.Max(0, MechaKnuckleshp2);
-    Console.WriteLine($"{knucklesName} does {knucklesDamage} damage on {mechaknucklesName}");
+    Sonichp2 -= knucklesDamage;
+    Sonichp2 = Math.Max(0, Sonichp2);
+    Console.WriteLine($"{knucklesName} does {knucklesDamage} damage on {sonicName}");
 
-    int mechaknucklesDamage = Random.Shared.Next(20);
-    Knuckleshp -= mechaknucklesDamage;
+    int sonicDamage = Random.Shared.Next(20);
+    Knuckleshp -= sonicDamage;
     Knuckleshp = Math.Max(0, Knuckleshp);
-    Console.WriteLine($"{mechaknucklesName} does {mechaknucklesDamage} damage on {knucklesName}");
+    Console.WriteLine($"{sonicName} does {sonicDamage} damage on {knucklesName}");
 
     Console.WriteLine("Press any button to continue");
     Console.ReadKey();
@@ -25,17 +25,17 @@ while (Knuckleshp > 0 && MechaKnuckleshp2 > 0)
 
 Console.WriteLine("\n BATTLE OVER");
 
-if (Knuckleshp == 0 && MechaKnuckleshp2 == 0)
+if (Knuckleshp == 0 && Sonichp2 == 0)
 {
     Console.WriteLine("WHAT?! NO WINNER?");
 }
 else if (Knuckleshp == 0)
 {
-    Console.WriteLine($"{mechaknucklesName} HAS BESTED THE ORIGINAL AND PROVEN HIMSELF SUPERIOR!");
+    Console.WriteLine($"{sonicName} HAS BESTED THE ECHIDNA GUARDIAN ONCE AGAIN!");
 }
 else
 {
-    Console.WriteLine($"{knucklesName} HAS DEFEATED HIS ROBOTIC COUNTERPART AND HAS SHOWED WHY HE'S THE REIGNING CHAMPION!");
+    Console.WriteLine($"{knucklesName} HAS DEFEATED THE BLUE BLUR AND HAS CLAIMED THE TITLE OF CHAMPION!");
 }
 
 Console.WriteLine("Press anything to leave");
